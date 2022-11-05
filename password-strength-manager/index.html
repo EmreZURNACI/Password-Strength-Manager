@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Manager</title>
+    <link rel="stylesheet" href="/password-strength-manager/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <span class="title">Password Strength Manager</span>
+        <div class="formcontrol">
+            <form class="form">
+                <div class="passwordControl">
+                    <input type="text" class="password" onkeyup="controlPassword()">
+                    <span class="hideObjects" onclick="hideObjects()">HIDE</span>
+                    <div class="prop"><span>En az</span><span>3 Karakter ,</span><span>1 Büyük Harf ,</span>
+                        <span>1 Küçük Harf ,</span><span>1 Sayı</span>
+                    </div>
+                </div>
+                <div class="control">
+                    <div class="strength">
+                        <div class="weak"></div>
+                        <div class="medium"></div>
+                        <div class="hard"></div>
+                    </div>
+                    <div class="textarea"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="/password-strength-manager/script.js"></script>
+</body>
+
+</html>
